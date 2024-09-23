@@ -9,6 +9,9 @@
      git add .
      git commit -m "Commit message"
      git push origin main
+     git pull
+     git branch
+     git checkout
      ```
 
 #### 2. **SSH (Secure Shell)**
@@ -28,6 +31,7 @@
      sudo systemctl stop apache2
      sudo systemctl restart apache2
      sudo systemctl status apache2
+     sudo apache2ctl configtest
      ```
 
 #### 4. **Nginx**
@@ -52,6 +56,7 @@
    - **Commandes Courantes:**
      ```sh
      vim filename.txt
+     :wq
      ```
 
 #### 7. **Emacs**
@@ -59,6 +64,7 @@
    - **Commandes Courantes:**
      ```sh
      emacs filename.txt
+     Ctrl + X, Ctrl + C
      ```
 
 #### 8. **Curl**
@@ -67,6 +73,7 @@
      ```sh
      curl -O https://example.com/file.zip
      curl -X POST -d "param1=value1&param2=value2" https://example.com/api
+     curl -I https://example.com  # Affiche seulement les en-têtes de réponse
      ```
 
 #### 9. **Wget**
@@ -83,6 +90,7 @@
      docker run -d -p 80:80 nginx
      docker ps
      docker stop <container_id>
+     docker build -t nom_image .  # Construire une image Docker à partir d'un Dockerfile
      ```
 
 #### 11. **Make**
